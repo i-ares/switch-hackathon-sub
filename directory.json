@@ -1,0 +1,18 @@
+{
+  "people": {
+    "asha":   {"name": "Asha Rao",    "role": "Platform Engineer",   "manager": "dev"},
+    "ben":    {"name": "Ben Carter",  "role": "Data Lead",           "manager": "priya"},
+    "chen":   {"name": "Chen Wei",    "role": "Security Engineer",   "manager": "priya"},
+    "dev":    {"name": "Dev Malhotra","role": "Engineering Manager", "manager": "priya"},
+    "elena":  {"name": "Elena Petrova","role": "Finance Controller", "manager": "priya"},
+    "priya":  {"name": "Priya Nair",  "role": "CTO",                 "manager": null}
+  },
+  "resources": {
+    "github-repo":      {"owner": "asha",  "sensitivity": "low"},
+    "staging-env":      {"owner": "asha",  "sensitivity": "medium"},
+    "analytics-db":     {"owner": "ben",   "sensitivity": "medium"},
+    "prod-database":    {"owner": "chen",  "sensitivity": "high"},
+    "finance-reports":  {"owner": "elena", "sensitivity": "high"}
+  },
+  "timezone": "Asia/Kolkata"
+}
