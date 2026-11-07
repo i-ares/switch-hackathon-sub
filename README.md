@@ -4,6 +4,12 @@ A Switch room where five agents turn an access request into a decision.
 
 [![Demo preview: click for the full 2-minute video](demo-preview.gif)](demo.mp4)
 
+
+
+Uploading switch-access-approval-demo-final.mp4…
+
+
+
 **Demo video:** [demo.mp4](demo.mp4) (2 min, click the preview above). It runs three real requests (LOW, MEDIUM, HIGH) through the room in Mattermost.
 
 ## How Switch is used
