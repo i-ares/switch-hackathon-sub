@@ -2,10 +2,6 @@
 
 A Switch room where five agents turn an access request into a decision.
 
-[![Demo preview: click for the full 2-minute video](demo-preview.gif)](demo.mp4)
-
-
-
 
 https://github.com/user-attachments/assets/2f5d081a-b112-43eb-a5e5-b78e730fe67f
 
