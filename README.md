@@ -17,8 +17,10 @@ A Switch room where five agents turn an access request into a decision.
 - `agents/*.md`: agent prompts
 
 ## Demo
-1. "I need read access to the github-repo for 3 days to review a PR" -> auto-approved.
-2. "I need write access to analytics-db for 14 days" -> owner approval.
-3. "I need admin on prod-database for a migration" -> owner + manager approval, meeting booked.
+1. "I'm Dev, read access to github-repo for 2 days to verify the changelog on release/2.4" -> LOW, auto-approved.
+2. "I'm Ben, write access to analytics-db for 10 days, DATA-91" -> MEDIUM, owner is requester so manager approves.
+3. "I'm Asha, admin on prod-database for 1 day, TLS rotation" -> HIGH, owner + manager approve, meeting booked.
+
+Approvals from people outside the room are relayed by a human and logged as "relayed, not verified directly".
 
 Calendar and directory are mocked. Real calendar integration is future work.
