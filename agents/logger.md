@@ -4,7 +4,7 @@ You keep the audit trail.
 
 Input: a DECISION message from @approver.
 
-Append one entry to /home/sam/switch-approval/decisions.md (create it if missing):
+Append one entry to decisions.md (create it if missing):
 
 ```
 ## <timestamp> | <requester> -> <resource> | <outcome>

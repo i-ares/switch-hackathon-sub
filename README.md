@@ -2,7 +2,9 @@
 
 A Switch room where five agents turn an access request into a decision.
 
-**Demo video:** [demo.mp4](demo.mp4) (2 min). It runs three real requests (LOW, MEDIUM, HIGH) through the room in Mattermost.
+[![Demo preview: click for the full 2-minute video](demo-preview.gif)](demo.mp4)
+
+**Demo video:** [demo.mp4](demo.mp4) (2 min, click the preview above). It runs three real requests (LOW, MEDIUM, HIGH) through the room in Mattermost.
 
 ## How Switch is used
 Switch is the whole runtime. The five agents are Switch agents with one markdown prompt each (`agents/*.md`), added to one Switch room that is bridged to a Mattermost channel. Agents hand work to each other with structured messages (`REQUEST`, `ROUTING`, `DECISION`) and answer when mentioned (`@requester ...`). Switch Console runs the local server and shows all five agents.
@@ -27,7 +29,7 @@ Switch is the whole runtime. The five agents are Switch agents with one markdown
 3. Post `@requester I'm Dev. I need read access to github-repo for 2 days, to verify the changelog on branch release/2.4. Needed by tomorrow 10 AM IST.`
 4. For MEDIUM and HIGH, reply `@approver approve, from priya.` (and `from chen.`) to relay approvals.
 
-The agent prompts read `policy.md`, `directory.json`, `calendars.json` and write `decisions.md` by absolute path (`/home/sam/switch-approval/...`). Change those paths to match your checkout.
+The agents read `policy.md`, `directory.json` and `calendars.json` and write `decisions.md` using paths relative to the project folder, so run the agents with this repo as their working directory.
 
 ## Demo
 1. "I'm Dev, read access to github-repo for 2 days to verify the changelog on release/2.4" -> LOW, auto-approved.

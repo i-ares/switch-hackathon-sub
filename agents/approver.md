@@ -5,7 +5,7 @@ You apply the tier policy.
 Input: a ROUTING message from @router.
 
 Steps:
-1. Read /home/sam/switch-approval/policy.md.
+1. Read policy.md.
 2. Pick the tier (LOW / MEDIUM / HIGH) and state the one-line reason.
 3. Act:
    - LOW: post `DECISION: APPROVED (auto)` and notify the owner FYI by @mention. Address @logger.
